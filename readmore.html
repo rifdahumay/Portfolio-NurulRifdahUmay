@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+
+    <!--Navigasi Desktop-->
+    <nav id="desktop-nav">
+      <div class="logo">Umay</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="index.html">Back</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--Navigasi Mobile-->
+    <nav id="hamburger-nav">
+      <div class="logo">Umay</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="index.html" onclick="toggleMenu()">Back</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <!--Project-->
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="projects-containers">
+
+          <!--Project 1-->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project/pj1_3DMarble.png"
+                alt="3D Marble"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">3D Marble</h2>
+            <p class="description">This is one of the assignments for the 3D Digital Visualization course, involving the creation of a marble using Blender tools.</p>
+          </div>
+
+          <!--Project 2-->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project/pj2_3DPerson.png"
+                alt="3D Person"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">3D Person</h2>
+            <p class="description">This is an asset, namely a person who will be used for a game. 
+              This is one of the assignments for the Interactive Multimedia Programming course.</p>
+          </div>
+
+          <!--Project 3-->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project/pj3_3DCatur.png"
+                alt="3D Catur"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">3D Catur</h2>
+            <p class="description">This is one of the assignments for the 3D Digital Visualization course, involving creating a chessboard using Blender tools.</p>
+          </div>
+
+          <!--Project 4-->
+            <div class="details-container color-container">
+                <div class="article-container">
+                <img
+                    src="./assets/project/pj4_MV.png"
+                    alt="MV"
+                    class="project-img"
+                />
+                </div>
+                <h2 class="experience-sub-title project-title">MV</h2>
+                <p class="description">One of the major assignments for the Audio Visual Technology course is to create a music video using 70 percent green screen. 
+                  Adobe After Effects is the editing tool used.</p>
+            </div>
+            
+            <!--Project 5-->
+            <div class="details-container color-container">
+                <div class="article-container">
+                  <video controls class="project-img">
+                    <source src="./assets/project/pj5_ShortClip.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <h2 class="experience-sub-title project-title">Short Clip</h2>
+                <p class="description">LOne of the assignments for the Audio Visual Technology course is to create a video using Adobe Premiere Pro.</p>
+            </div>
+            
+            <!--Project 6-->
+            <div class="details-container color-container">
+                <div class="article-container">
+                <img
+                    src="./assets/project/pj6_Web.png"
+                    alt="Website"
+                    class="project-img"
+                />
+                </div>
+                <h2 class="experience-sub-title project-title">Website</h2>
+                <p class="description">One of the assignments for the Interactive Web Programming course is to create a website.</p>
+            </div>
+
+            <!--Project 7-->
+            <div class="details-container color-container">
+                <div class="article-container">
+                <img
+                    src="./assets/project/pj7_GameAR.jpg"
+                    alt="Game AR"
+                    class="project-img"
+                />
+                </div>
+                <h2 class="experience-sub-title project-title">Game AR</h2>
+                <p class="description">One of the assignments for the Augmented Reality course is to create an AR application built on a mobile device capable of 
+                  displaying 1 object on 1 printed marker with the following interactions: a. Information by pressing a digital button, b. Color/sound change, 
+                  c. 360-degree scene interaction, d. Joystick for object movement, and e. Virtual button interaction by pressing a button on a paper marker. 
+                  The tool used is Unity.</p>
+            </div>
+            
+            <!--Project 8-->
+            <div class="details-container color-container">
+                <div class="article-container">
+                  <video controls class="project-img">
+                    <source src="./assets/project/pj8_MobileApp.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <h2 class="experience-sub-title project-title">Mobile App</h2>
+                <p class="description">One of the assignments for the Mobile Multimedia Programming course is to create a mobile application using Android Studio.</p>
+            </div>
+            
+            <!--Project 9-->
+            <div class="details-container color-container">
+                <div class="article-container">
+                <img
+                    src="./assets/project/pj9_Game.png"
+                    alt="Game"
+                    class="project-img"
+                />
+                </div>
+                <h2 class="experience-sub-title project-title">Game</h2>
+                <p class="description">One of the assignments for the Object-Oriented Programming course is to create a game.</p>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <footer>
+      <p>Copyright &#169; 2024 Umay. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

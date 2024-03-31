@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+
+    <!--Navigasi Desktop-->
+    <nav id="desktop-nav">
+      <div class="logo">Umay</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--Navigasi Mobile-->
+    <nav id="hamburger-nav">
+      <div class="logo">Umay</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <!--Profile-->
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Nurul Rifdah Umay</h1>
+        <p class="section__text__p2">a Digital Creative Multimedia Student</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume_umay.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!--About Me-->
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>Web Development & UI UX Design in Celerates</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>a Digital Creative Multimedia Student</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I am Nurul Rifdah Umay. It is usually called Umay. 
+              Currently studying at Telkom University located in Bandung. 
+              As a 6th semester student majoring in Digital Creative Multimedia. 
+              And now participating in the Web Development & UI UX Design Program at Celerates.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Project-->
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="projects-containers">
+
+          <!--Project 1-->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project/pj1_3DMarble.png"
+                alt="3D Marble"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">3D Marble</h2>
+            <p class="description">This is one of the assignments for the 3D Digital Visualization course, involving the creation of a marble using Blender tools.</p>
+          </div>
+
+          <!--Project 2-->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project/pj2_3DPerson.png"
+                alt="3D Person"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">3D Person</h2>
+            <p class="description">This is an asset, namely a person who will be used for a game. 
+              This is one of the assignments for the Interactive Multimedia Programming course.</p>
+          </div>
+
+          <!--Project 3-->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project/pj3_3DCatur.png"
+                alt="3D Catur"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">3D Catur</h2>
+            <p class="description">This is one of the assignments for the 3D Digital Visualization course, involving creating a chessboard using Blender tools.</p>
+          </div>
+          <div class="centered">
+            <a href="readmore.html">Read More.....</a>
+          </div>
+      </div>
+    </section>
+
+    <!--Contact-->
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <p class="contact-text">If you have any questions, please fill out the form below.</p>
+      <div class="contact-form">
+        <form id="contact-form">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <div class="btn-container">
+            <button type="submit"
+              class="btn btn-color-2 project-btn"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:nrifdahu802@gmail.com">nrifdahu802@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/instagram.png"
+            alt="Instagram icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.instagram.com/rfdhumay?igsh=MWF3OHNrNTJvdm11OA==">rfdhumay</a></p>
+        </div>
+      </div>
+    </section>
+    
+
+    <!--Footer-->
+    <footer>
+      <p>Copyright &#169; 2024 Umay. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
